@@ -44,7 +44,7 @@ github:RWDai/dsh-unread
 或本地开发：
 
 ```
-link:/storage/heletian/dsh-unread
+link:/path/to/dsh-unread
 ```
 
 也可以直接装包含它的组合包：`github:RWDai/dsh-rwdai-bundle`。

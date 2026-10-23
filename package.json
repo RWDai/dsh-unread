@@ -38,6 +38,14 @@
     "session",
     "sidebar"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RWDai/dsh-unread.git"
+  },
+  "homepage": "https://github.com/RWDai/dsh-unread#readme",
+  "bugs": {
+    "url": "https://github.com/RWDai/dsh-unread/issues"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=20"
