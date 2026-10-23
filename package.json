@@ -1,0 +1,45 @@
+{
+  "name": "dsh-unread",
+  "version": "0.1.0",
+  "private": false,
+  "description": "DSH 插件：手动把会话标为未读（会话菜单开关 + 侧边栏行前圆点，状态存在 host 侧、跨浏览器同步）",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-primitives"
+      ]
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node test/host.smoke.mjs && node test/client.smoke.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "unread",
+    "session",
+    "sidebar"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
